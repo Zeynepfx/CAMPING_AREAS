@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: black;
+ }
+.img {
+  background-image: url(pexels-kammeran-gonzalezkeola-5441748.png);
+  height: 100vh;
+  
+}
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #fff;
+   display: inline;
+  margin: 30px;
+  position: relative;
+}
+.navbar ul li a:hover{
+  background-color: #e7eef242;
+box-shadow: 0 0 50px 15px #e7eef2;
+}
+.navbar ul li {
+  display: inline;
+  margin: 30px;
+  position: relative;
+}
+
+.navbar ul {
+  margin-left: 60%;
+  padding: 10px;
+}
+.navbar {
+  background-color: black;
+  height: 60px;
+}
+
+
+h3{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  font-size: 55px;
+}
+.type::after{
+  content: "|";
+  position: absolute;
+  right: 0%;
+  color: white;
+  background-color: #00000057;
+  width: 100%;  
+  animation: typing 4s steps(40) infinite;
+}
+@keyframes typing{
+  to{
+    width: 0%;
+
+  }
+}
+
+.div1 {
+  width: 500px;
+  height: 600px;
+  color: #000000;
+  background: rgba(241, 239, 239, 0.9);
+  padding: 20px;
+  float: left;
+  margin: 10px;
+  border-radius: 10px;
+}
+.div1:hover{
+box-shadow: #165d9799 10px 5px ;
+}
+.div2 {
+  display: inline-block;
+  width: 500px;
+  height: 600px;
+  color: #000000;
+  background: rgba(241, 239, 239, 0.9);
+  padding: 20px;
+  margin: 10px;
+  float: left;
+  border-radius: 10px;
+}
+.div2:hover{
+  box-shadow: #165d9799 10px 5px ;
+  }
+.div3 {
+  display: inline-block;
+  width: 450px;
+  height: 600px;
+  color: #000000;
+  background: rgba(241, 239, 239, 0.9);
+  padding: 20px;
+  margin: 10px;
+  float: left;
+  border-radius: 10px;
+}
+.div3:hover{
+  box-shadow: #165d9799 10px 5px ;
+  }
+.div1 h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.div2 h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.fethiye {
+  height: 300px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.akyaka {
+  width: 400px;
+  padding-top: 10px;
+  padding-left: 40px;
+  border-radius: 0px;
+}
+.article2 {
+  font-size: 15px;
+}
+.div3-img{
+    height: 230px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.div3 h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+ footer{
+  position:fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 10px;
+  padding:10px;
+  background-color: rgb(20, 20, 20);
+ }
+ footer a{
+  text-decoration: none;
+  text-shadow: #fff;
+  color: #f3f8fc;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 20px;
+ }
+ footer h4{
+  color: #165d97;
+  font-size: 20px;
+ }
+ .row1{
+  display: inline-block;
+  width: 60%;
+  height: 400px;
+  color: #000000;
+  background: rgba(241, 239, 239, 0.9);
+  float: left;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  
+ }
+
+  .control {
+    font-family: arial;
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    padding-top: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+    .control input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+.control_indicator {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #000000;
+    border: 1px hidden #000000;
+    border-radius: 5px;
+}
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+    background: #e80909;
+}
+
+.control input:checked ~ .control_indicator {
+    background: #f40005;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+    background: #d7b2b2;
+}
+.control input:disabled ~ .control_indicator {
+    background: #e6e6e6;
+    opacity: 10;
+    pointer-events: none;
+}
+.control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+.control input:checked ~ .control_indicator:after {
+    display: block;
+}
+.control-checkbox .control_indicator:after {
+    left: 8px;
+    top: 4px;
+    width: 3px;
+    height: 8px;
+    border: solid #f22020;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.control-checkbox input:disabled ~ .control_indicator:after {
+    border-color: #317aa8;
+}
+.control-checkbox .control_indicator::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 7.8rem;
+    height: 4.5rem;
+    margin-left: -1.3rem;
+    margin-top: -1.3rem;
+    background: #2aa1c0;
+    border-radius: 3rem;
+    opacity: 0.6;
+    z-index: 99999;
+    transform: scale(0);
+}
+@keyframes s-ripple {
+    0% {
+        transform: scale(0);
+    }
+    20% {
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+@keyframes s-ripple-dup {
+   0% {
+       transform: scale(0);
+    }
+   30% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+.control-checkbox input + .control_indicator::before {
+    animation: s-ripple 250ms ease-out;
+}
+.control-checkbox input:checked + .control_indicator::before {
+    animation-name: s-ripple-dup;
+}
+.row2{
+  float: left;
+}
+.gif{
+  padding-left:00px;
+  border-radius: 20px 20px 20px 20px;
+}
